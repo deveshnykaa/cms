@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories
 public class PrintHelloWorldApplication{
 
-	public static void main(String[] args)ssssssss throws Exception  {
+	public static void main(String[] args) throws Exception  {
 		SpringApplication.run(PrintHelloWorldApplication.class, args);
 	}
 

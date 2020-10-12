@@ -39,7 +39,7 @@ public class CustomerService {
                 .get();*/
         Optional<Customer> optionalCustomer = customerDAO.findById(customerId);
         if(!optionalCustomer.isPresent())
-            throw new CustomerNotFoundException("Customer Record bshbsjb is not available...");
+            throw new CustomerNotFoundException("Customer Record is not available...");
 
         return optionalCustomer.get();
     }

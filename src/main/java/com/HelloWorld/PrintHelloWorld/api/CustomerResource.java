@@ -13,15 +13,16 @@ public class CustomerResource {
     @Autowired
     private CustomerService customerService;
 
+    //@Override
     @PostMapping
     public Customer addCustomer(@RequestBody Customer customer){
         return customerService.addCustomer(customer);
     }
 
-    @GetMapping
+   /* @GetMapping
     public List<Customer> getCustomers(){
         return customerService.getCustomers();
-    }
+    }*/
 
     @GetMapping(value = "/{customerId}")
     public Customer getCustomer(@PathVariable("customerId") int customerId){

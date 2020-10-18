@@ -3,6 +3,7 @@ package com.HelloWorld.PrintHelloWorld.exception;
 public class ApplicationError {
     private int code;
     private String message;
+    private String details;
 
     public int getCode() {
         return code;
@@ -18,5 +19,13 @@ public class ApplicationError {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
     }
 }

@@ -2,22 +2,23 @@ package com.HelloWorld.PrintHelloWorld.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonProperty("id")
+    //@Column(name="Customer ID")
     private int customerId;
     @JsonProperty("firstName")
+   // @Column(name="Customer First Name")
     private String custFirstName;
     @JsonProperty("lastName")
+    //@Column(name="Customer Last Name")
     private String custLastName;
     @JsonProperty("email")
+   // @Column(name="Customer Email Address")
     private String custEmail;
 
     public int getCustomerId() {
